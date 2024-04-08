@@ -11,7 +11,7 @@ class CentroMedico extends Model
 {
     use HasFactory;
 
-    protected $table = 'centros_medicos';
+    protected $table = "centros_medicos";
 
     public function doctores(): HasMany {
         return $this->hasMany(Doctor::class);
