@@ -19,7 +19,6 @@ return new class extends Migration
             $table->decimal('costo');
             $table->unsignedBigInteger('doctor_id');
             $table->unsignedBigInteger('centro_medico_id');
-            $table->unsignedBigInteger('medicamento_id');
             $table->timestamps();
 
             $table->foreign('doctor_id')->references('id')->on('doctores')->onDelete('cascade');
